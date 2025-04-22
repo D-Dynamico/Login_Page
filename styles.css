@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: #0c0015;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .blob-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .blob {
+    position: absolute;
+    background: radial-gradient(
+      circle at 30% 30%,
+      rgba(100, 150, 255, 0.9),
+      rgba(80, 100, 220, 0.8) 40%,
+      rgba(90, 60, 200, 0.7) 60%,
+      rgba(60, 30, 150, 0.6) 80%
+    );
+    box-shadow: 0 0 100px 20px rgba(80, 100, 220, 0.4);
+    filter: blur(40px);
+    border-radius: 50%;
+    transform-origin: center center;
+    will-change: transform, opacity, filter;
+    transition: none; 
+    backface-visibility: hidden;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .sign_btn {
+    background-color: #ff6b00;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 2rem;
+    max-width: 900px;
+    z-index: 20;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+  
+  .title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+  }
+  
+  .footer-main {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    opacity: 1;
+  }
